@@ -4,7 +4,7 @@
 	date_default_timezone_set('Europe/Amsterdam');
 
 /*username = // Example user10@companyname.provider.voipit.nl
-/*password = "password";   // SIP password 
+/*password = "password";   // SIP password or XSI directory password
 /* Get the password from the users>some-user>address>profiles>files?respository download if unsure
 /*
 
