@@ -1,2 +1,2 @@
 # Remote-phonebook-generator
-XML Phonebook generator for Tiptel phones 
+XML Phonebook generator for Tiptel phones
