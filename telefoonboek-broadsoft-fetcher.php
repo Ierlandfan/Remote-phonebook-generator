@@ -3,24 +3,26 @@
 	error_reporting(E_ALL);
 	date_default_timezone_set('Europe/Amsterdam');
 
-/*username = // Example user10@companyname.provider.voipit.nl
-/*password = "password";   // SIP password or XSI directory password
-/* Get the password from the users>some-user>address>profiles>files?repository download if unsure
-/*
-
 /* Fetch phonebook from Broadsoft server and create xml file in Tiptel Format*/
-/* Ronald Brakeboer 2019 */
+/* Ierlandfan 2019 */
+
+/*username = // Example user10@companyname.provider.voipit.nl */
+/*password = "password";   // SIP password or XSI directory password */
+/* Get the username & password from the users>some-user>address>profiles>files/repository if unsure */
+/* Search for Config.BroadSoft.XSI.User (value) and Config.BroadSoft.XSI.Pwd (value) )
+
 
 /* Step 1
 Connect to Broadsoft server and import the data
 */ 
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, 'https://xsi.voipit.nl/com.broadsoft.xsi-actions/v2.0/user/USERNAME/directories/GroupCommon?format=json'); //Change username
+curl_setopt($ch, CURLOPT_URL, 'https://xsi.voipit.nl/com.broadsoft.xsi-actions/v2.0/user/USERNAME/directories/GroupCommon?format=json'); 
+//Change USERNAME
 
 
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
-curl_setopt($ch, CURLOPT_USERPWD, 'USERNAME' . ':' . 'PASSWORD'); //Change username (Same as above) and password
+curl_setopt($ch, CURLOPT_USERPWD, 'USERNAME' . ':' . 'PASSWORD'); //Change USERNAME (Same as above) and PASSWORD
 
 $headers = array();
 $headers[] = 'Content-Type: application/json';
