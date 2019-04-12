@@ -3,7 +3,7 @@
 	error_reporting(E_ALL);
 	date_default_timezone_set('Europe/Amsterdam');
 
-/* Fetch phonebook from Broadsoft server and create xml file in Tiptel Format*/
+/* Fetch phonebook from Broadsoft server and create xml file in Tiptel Format */
 /* Ierlandfan 2019 */
 
 /*username = // Example user10@companyname.provider.voipit.nl */
