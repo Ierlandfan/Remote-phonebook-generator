@@ -5,7 +5,7 @@
 
 /*username = // Example user10@companyname.provider.voipit.nl
 /*password = "password";   // SIP password or XSI directory password
-/* Get the password from the users>some-user>address>profiles>files?respository download if unsure
+/* Get the password from the users>some-user>address>profiles>files?repository download if unsure
 /*
 
 /* Fetch phonebook from Broadsoft server and create xml file in Tiptel Format*/
